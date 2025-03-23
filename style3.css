@@ -1,0 +1,2891 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.header-div{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap:250px;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    margin-bottom: 50px;
+}
+
+
+.image-div{
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.img1{
+    width:150px;
+    margin-bottom: 20px;
+}
+
+.img2{
+    width:30px
+}
+
+.img2:hover{
+    width:50px;
+    transition: 0.25s;
+}
+
+.img3{
+    width:30px
+}
+
+.hrefs-div{
+    padding-top: 20px;
+    padding-right: 300px;
+}
+
+.a1{
+    text-decoration: none;
+    padding-right: 20px;
+    font-family: "Kanit", sans-serif;
+    color:black;
+}
+
+.cart-div{
+    width:400px;
+    background-color: rgb(16, 32, 56);
+    color:white;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-family: "Kanit", sans-serif;
+}
+
+.cart-div .cart-list .first img{
+    width:100%;
+}
+
+.cart-div .cart-list .first{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cart-list .amount span{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    background-color: rgb(194, 194, 194);
+    color:black;
+    border-radius: 50%;
+}
+
+.cart-list .amount span:nth-child(2){
+    background-color: transparent;
+    color:white;
+}
+
+
+.cart-list{
+    overflow: auto;
+}
+
+.cart-list::-webkit-scrollbar{
+    width:0
+}
+
+.showCart .cart-div{
+    right:0
+}
+
+.amount span.plus,
+.amount span.minus {
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.amount span.plus:hover,
+.amount span.minus:hover {
+    background-color: rgb(86, 86, 86);
+    color: white;
+}
+
+
+.h1-2{
+    font-family: "Roboto Mono", monospace;
+    padding-left: 10px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+}
+
+.button1{
+    width:200px;
+    height:100%;
+    font-family:"Roboto Mono", monospace;
+    background-color: rgb(137, 162, 201);
+    color:white;
+    font-weight: 600;
+    border:none
+}
+
+.button2{
+    width:200px;
+    height:100%;
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(87, 119, 172);
+    color:white;
+    font-weight: 600;
+    border: none;
+}
+
+.button3{
+    width:100%;
+    height:40px;
+    border:none;
+    background-color: rgb(25, 103, 124);
+    color:white;
+    font-weight: 600;
+    font-family: "Roboto Mono", monospace;
+}
+
+.phonebutton{
+    border:none;
+    background-color: white;
+    padding: 10px;
+    width:120px;
+    border-radius: 10px;
+    color:black;
+    font-weight: 600;
+}
+
+.techno-info{
+    background-color: rgb(11, 12, 43);
+    width:100%;
+    height:300px;
+}
+
+.h2-3{
+    font-family: "Orbitron", sans-serif;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.paragraph{
+    color:white;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+}
+
+.h2-4{
+    font-family: "Orbitron", sans-serif;
+    color:white;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+.info3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.main-techno-info{
+    display: flex;
+    flex-direction: row;
+    gap:50px
+}
+
+.href1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.a3{
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+    color:white;
+}
+
+.href2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.href3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.paragraph3{
+    font-family: "Barlow", sans-serif;
+    color:white;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap:20px;font-family: "Nunito", sans-serif;
+    padding-top: 100px;
+}
+
+.logo{
+    width:40px;
+    height:40px
+}
+
+.headphonemaininfo{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap:250px;
+    margin-bottom: 50px;
+}
+
+.h1-1{
+    font-size: 70px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.img4{
+    width:250px;
+    height:335px
+}
+
+.image{
+    padding-top: 50px;
+}
+
+.heading{
+    padding-left: 400px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.maininfo{
+    font-family: "Roboto", sans-serif;
+    color:rgb(159, 159, 159)
+}
+
+.info{
+    font-family: "Kanit", sans-serif;
+    padding-top: 5px;
+}
+
+.headphonesinfo{
+    background-color: #F8F8F8;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headphones-main-div{
+    margin-bottom: 50px;
+}
+
+.info1{
+    display: flex;
+    flex-direction: row;
+    gap:200px
+}
+
+.div1info1{
+    margin-bottom: 50px;
+}
+
+.div2info1{
+    margin-bottom: 50px;
+}
+
+.heading2{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.paragraph1{
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    color:rgb(133, 133, 133)
+}
+
+.buttoninfo{
+    display: flex;
+    flex-direction: row;
+    gap:20px
+}
+
+
+.button4{
+    border:none;
+    background-color: rgb(234, 97, 97);
+    color:rgb(254, 254, 254);
+    width:100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.button4:hover{
+    background-color: transparent;
+    border:1px solid rgb(234, 97, 97);
+    color:black;
+    transition: 0.25s;
+}
+
+.headphones1{
+    width:400px
+}
+
+.headphones1image{
+    padding-left: 350px;
+    padding-top: 100px;
+}
+
+.info-headphone1{
+    display: flex;
+    flex-direction: row;
+    gap:150px;
+}
+
+.maintextinfo{
+    padding-top: 150px;
+}
+
+.h1-4{
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 20px;
+}
+
+.colors-div{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-bottom: 20px;
+}
+
+.pricecontent{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+.colorparagraph{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+.differentcolors1{
+    background-color: grey;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+
+.differentcolors2{
+    background-color: red;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+
+.differentcolors3{
+    background-color: black;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+
+.differentcolors4{
+    background-color: blue;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+
+.differentcolors5{
+    background-color: blueviolet;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+
+.differentcolors1parentdiv{
+    padding-top: 5px;
+}
+
+.text{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.headphones5{
+    width:300px
+}
+
+.headphones5image{
+    padding-left: 400px;
+    padding-top: 100px;
+}
+
+.headphones6image{
+    padding-left: 400px;
+    padding-top: 100px;
+}
+
+.info-headphone5{
+    display: flex;
+    flex-direction: row;
+    gap:200px;
+}
+
+.info-headphone6{
+    display: flex;
+    flex-direction: row;
+    gap:200px;
+}
+
+.search-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2-5{
+    font-family: "Quicksand", sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+input{
+    border:none;
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.buttonsearch{
+    position: absolute;
+    left:320px;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:none;
+    background-color: rgb(234, 97, 97);
+    color:white
+}
+
+input::placeholder{
+    padding-left: 10px;
+    color:rgb(83, 83, 83)
+}
+
+@media screen and (max-width:1300px){
+    .header-div{
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+        align-items: center;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        align-items: center;
+        margin-bottom: 30px;
+        display: inline;
+    }
+
+
+    .headphonemaininfo{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        gap:50px;
+        margin-bottom: 50px;
+    }
+    
+    .h1-1{
+        font-size: 50px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .img4{
+        width:250px;
+        height:335px
+    }
+    
+    .image{
+        padding-top: 50px;
+    }
+    
+    .heading{
+        padding-left: 150px;
+        padding-top: 100px;
+        margin-bottom: 50px;
+    }
+    
+    .maininfo{
+        font-family: "Roboto", sans-serif;
+        color:rgb(159, 159, 159);
+        font-size: 12px;
+    }
+    
+    .info{
+        font-family: "Kanit", sans-serif;
+        padding-top: 5px;
+    }
+    
+    .headphonesinfo{
+        background-color: #F8F8F8;
+        height:900px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headphones-main-div{
+        margin-bottom: 50px;
+    }
+    
+    .info1{
+        display: flex;
+        flex-direction: column;
+        gap:50px
+    }
+    
+    .div1info1{
+        margin-bottom: 50px;
+    }
+    
+    .div2info1{
+        margin-bottom: 50px;
+    }
+    
+    .heading2{
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .paragraph1{
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        color:rgb(133, 133, 133)
+    }
+    
+    .buttoninfo{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    
+    .button4{
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:rgb(254, 254, 254);
+        width:100px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .button4:hover{
+        background-color: transparent;
+        border:1px solid rgb(234, 97, 97);
+        color:black;
+        transition: 0.25s;
+    }
+    
+    .headphones1{
+        width:400px
+    }
+    
+    .headphones1image{
+        padding-left: 100px;
+        padding-top: 50px;
+    }
+    
+    .info-headphone1{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .maintextinfo{
+        padding-top: 150px;
+    }
+    
+    .h1-4{
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .colors-div{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+    
+    .pricecontent{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        border-right: 1px solid black;
+        padding-right: 10px;
+    }
+    
+    .colorparagraph{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+    }
+    
+    .differentcolors1{
+        background-color: grey;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors2{
+        background-color: red;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors3{
+        background-color: black;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors4{
+        background-color: blue;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors5{
+        background-color: blueviolet;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors1parentdiv{
+        padding-top: 5px;
+    }
+    
+    .text{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    
+    .headphones5{
+        width:300px
+    }
+    
+    .headphones5image{
+        padding-left: 160px;
+        padding-top: 100px;
+    }
+    
+    .headphones6image{
+        padding-left: 160px;
+        padding-top: 100px;
+    }
+    
+    .info-headphone5{
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+    }
+    
+    .info-headphone6{
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+    }
+    
+    .search-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2-5{
+        font-family: "Quicksand", sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    input{
+        border:none;
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .buttonsearch{
+        position: absolute;
+        left:320px;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:white
+    }
+    
+    input::placeholder{
+        padding-left: 10px;
+        color:rgb(83, 83, 83)
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+        align-items: center;
+        position: relative;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        align-items: center;
+        margin-bottom: 30px;
+        display: inline;
+    }
+    
+    .icon-div{
+        position: absolute;
+        left:750px;
+        top:100px
+    }
+
+    .techno-info{
+        background-color: rgb(11, 12, 43);
+        max-width: 100%;
+        height:800px;
+    }
+    
+    
+    .h2-4{
+        font-family: "Orbitron", sans-serif;
+        color:white;
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+    
+    .main-techno-info{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+    .href1,.href2,.href3,.contact-us{
+        padding-left: 30px;
+    }
+
+    .logos{
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+
+    .headphonemaininfo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap:0px;
+        margin-bottom: 50px;
+    }
+    
+    .h1-1{
+        font-size: 50px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .img4{
+        width:250px;
+        height:335px;
+    }
+    
+    .image{
+        padding-top: 0px;
+        margin-left: 450px;
+    }
+    
+    .heading{
+        padding-left: 220px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .maininfo{
+        font-family: "Roboto", sans-serif;
+        color:rgb(159, 159, 159);
+        font-size: 12px;
+    }
+    
+    .info{
+        font-family: "Kanit", sans-serif;
+        padding-top: 5px;
+    }
+    
+    .headphonesinfo{
+        background-color: #F8F8F8;
+        height:900px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headphones-main-div{
+        margin-bottom: 50px;
+    }
+    
+    .info1{
+        display: flex;
+        flex-direction: column;
+        gap:50px
+    }
+    
+    .div1info1{
+        margin-bottom: 50px;
+    }
+    
+    .div2info1{
+        margin-bottom: 50px;
+    }
+    
+    .heading2{
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .paragraph1{
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        color:rgb(133, 133, 133)
+    }
+    
+    .buttoninfo{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    
+    .button4{
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:rgb(254, 254, 254);
+        width:100px;
+        padding: 0px;
+        height:40px;
+        border-radius: 20px;
+    }
+    
+    .button4:hover{
+        background-color: transparent;
+        border:1px solid rgb(234, 97, 97);
+        color:black;
+        transition: 0.25s;
+    }
+    
+    .headphones1{
+        width:300px;
+    }
+    
+    .headphones1image{
+        padding-left: 50px;
+        padding-top: 130px;
+    }
+    
+    .info-headphone1{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .maintextinfo{
+        padding-top: 150px;
+    }
+    
+    .h1-4{
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .colors-div{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+    
+    .pricecontent{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        border-right: 1px solid black;
+        padding-right: 10px;
+    }
+    
+    .colorparagraph{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+    }
+    
+    .differentcolors1{
+        background-color: grey;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors2{
+        background-color: red;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors3{
+        background-color: black;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors4{
+        background-color: blue;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors5{
+        background-color: blueviolet;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors1parentdiv{
+        padding-top: 5px;
+    }
+    
+    .text{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    
+    .headphones5{
+        width:220px
+    }
+    
+    .headphones5image{
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+    
+    .headphones6image{
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+    
+    .info-headphone5{
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+    }
+    
+    .info-headphone6{
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+    }
+    
+    .search-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2-5{
+        font-family: "Quicksand", sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    input{
+        border:none;
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .buttonsearch{
+        position: absolute;
+        left:320px;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:white
+    }
+    
+    input::placeholder{
+        padding-left: 10px;
+        color:rgb(83, 83, 83)
+    }
+}
+
+@media screen and (max-width:880px){
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+        align-items: center;
+        position: relative;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        align-items: center;
+        margin-bottom: 30px;
+        display: inline;
+    }
+    
+    .icon-div{
+        position: absolute;
+        left:670px;
+        top:100px
+    }
+
+    
+    .techno-info{
+        background-color: rgb(11, 12, 43);
+        max-width: 100%;
+        height:800px;
+    }
+    
+    
+    .h2-4{
+        font-family: "Orbitron", sans-serif;
+        color:white;
+        margin-bottom: 10px;
+        padding-left: 150px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    .main-techno-info{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+    .href1,.href2,.href3,.contact-us{
+        padding-left: 150px;
+    }
+
+    .logos{
+        padding-left: 150px;
+        padding-top: 0px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap:100px;
+        background-color: #ebebeb;
+        width:500px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .headphonemaininfo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap:0px;
+        margin-bottom: 50px;
+    }
+    
+    .h1-1{
+        font-size: 50px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .img4{
+        width:250px;
+        height:335px;
+    }
+    
+    .image{
+        padding-top: 0px;
+        margin-left: 300px;
+    }
+    
+    .heading{
+        padding-left: 100px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .maininfo{
+        font-family: "Roboto", sans-serif;
+        color:rgb(159, 159, 159);
+        font-size: 12px;
+    }
+    
+    .info{
+        font-family: "Kanit", sans-serif;
+        padding-top: 5px;
+    }
+    
+    .headphonesinfo{
+        background-color: #F8F8F8;
+        height:900px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headphones-main-div{
+        margin-bottom: 50px;
+    }
+    
+    .info1{
+        display: flex;
+        flex-direction: column;
+        gap:50px
+    }
+    
+    .div1info1{
+        margin-bottom: 50px;
+    }
+    
+    .div2info1{
+        margin-bottom: 50px;
+    }
+    
+    .heading2{
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .paragraph1{
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        color:rgb(133, 133, 133)
+    }
+    
+    .buttoninfo{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    
+    .button4{
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:rgb(254, 254, 254);
+        width:100px;
+        padding: 0px;
+        height:40px;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    
+    .button4:hover{
+        background-color: transparent;
+        border:1px solid rgb(234, 97, 97);
+        color:black;
+        transition: 0.25s;
+    }
+    
+    .headphones1{
+        width:250px;
+    }
+    
+    .headphones1image{
+        padding-left: 20px;
+        padding-top: 150px;
+    }
+    
+    .info-headphone1{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .maintextinfo{
+        padding-top: 150px;
+    }
+    
+    .h1-4{
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .colors-div{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+    
+    .pricecontent{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        border-right: 1px solid black;
+        padding-right: 10px;
+    }
+    
+    .colorparagraph{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+    }
+    
+    .differentcolors1{
+        background-color: grey;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors2{
+        background-color: red;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors3{
+        background-color: black;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors4{
+        background-color: blue;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors5{
+        background-color: blueviolet;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors1parentdiv{
+        padding-top: 5px;
+    }
+    
+    .text{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    .headphones5{
+        width:180px
+    }
+    
+    .headphones5image{
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+    
+    .headphones6image{
+        padding-left: 50px;
+        padding-top: 100px;
+    }
+    
+    .info-headphone5{
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+    }
+    
+    .info-headphone6{
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+    }
+    
+    .search-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2-5{
+        font-family: "Quicksand", sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    input{
+        border:none;
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .buttonsearch{
+        position: absolute;
+        left:320px;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:white
+    }
+    
+    input::placeholder{
+        padding-left: 10px;
+        color:rgb(83, 83, 83)
+    }
+}
+
+
+@media screen and (max-width:725px){
+    .icon-div{
+        position: absolute;
+        left:600px;
+        top:110px
+    }
+}
+
+@media screen and (max-width:670px){
+    .icon-div{
+        position: absolute;
+        left:350px;
+        top:150px
+    }
+}
+
+@media screen and (max-width:668px){
+    .icon-div{
+        position: absolute;
+        left:300px;
+        top:150px
+    }
+}
+
+
+@media screen and (max-width:780px){
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+        align-items: center;
+        position: relative;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        align-items: center;
+        margin-bottom: 30px;
+        display: inline;
+    }
+    
+    .icon-div{
+        position: absolute;
+        left:650px;
+        top:100px
+    }
+
+    
+    .techno-info{
+        background-color: rgb(11, 12, 43);
+        max-width: 100%;
+        height:800px;
+    }
+    
+    
+    .h2-4{
+        font-family: "Orbitron", sans-serif;
+        color:white;
+        margin-bottom: 10px;
+        padding-left: 150px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    .main-techno-info{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+    .href1,.href2,.href3,.contact-us{
+        padding-left: 150px;
+    }
+
+    .logos{
+        padding-left: 150px;
+        padding-top: 0px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap:100px;
+        background-color: #ebebeb;
+        width:500px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .headphonemaininfo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap:0px;
+        margin-bottom: 50px;
+    }
+    
+    .h1-1{
+        font-size: 50px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .img4{
+        width:250px;
+        height:335px;
+    }
+    
+    .image{
+        padding-top: 0px;
+        margin-left: 300px;
+    }
+    
+    .heading{
+        padding-left: 100px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .maininfo{
+        font-family: "Roboto", sans-serif;
+        color:rgb(159, 159, 159);
+        font-size: 12px;
+    }
+    
+    .info{
+        font-family: "Kanit", sans-serif;
+        padding-top: 5px;
+    }
+    
+    .headphonesinfo{
+        background-color: #F8F8F8;
+        height:900px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headphones-main-div{
+        margin-bottom: 50px;
+    }
+    
+    .info1{
+        display: flex;
+        flex-direction: column;
+        gap:50px
+    }
+    
+    .div1info1{
+        margin-bottom: 50px;
+    }
+    
+    .div2info1{
+        margin-bottom: 50px;
+    }
+    
+    .heading2{
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .paragraph1{
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        color:rgb(133, 133, 133)
+    }
+    
+    .buttoninfo{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    
+    .button4{
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:rgb(254, 254, 254);
+        width:100px;
+        padding: 0px;
+        height:40px;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    
+    .button4:hover{
+        background-color: transparent;
+        border:1px solid rgb(234, 97, 97);
+        color:black;
+        transition: 0.25s;
+    }
+    
+    .headphones1{
+        width:220px;
+    }
+    
+    .headphones1image{
+        padding-left: 50px;
+        padding-top: 130px;
+    }
+    
+    .info-headphone1{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .maintextinfo{
+        padding-top: 150px;
+    }
+    
+    .h1-4{
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .colors-div{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+    
+    .pricecontent{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        border-right: 1px solid black;
+        padding-right: 10px;
+    }
+    
+    .colorparagraph{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+    }
+    
+    .differentcolors1{
+        background-color: grey;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors2{
+        background-color: red;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors3{
+        background-color: black;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors4{
+        background-color: blue;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors5{
+        background-color: blueviolet;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors1parentdiv{
+        padding-top: 5px;
+    }
+    
+    .text{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    .headphones5{
+        width:170px
+    }
+    
+    .headphones5image{
+        padding-left: 100px;
+        padding-top: 150px;
+    }
+    
+    .headphones6image{
+        padding-left: 100px;
+        padding-top: 150px;
+    }
+    
+    .info-headphone5{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .info-headphone6{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .search-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2-5{
+        font-family: "Quicksand", sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    input{
+        border:none;
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .buttonsearch{
+        position: absolute;
+        left:320px;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:white
+    }
+    
+    input::placeholder{
+        padding-left: 10px;
+        color:rgb(83, 83, 83)
+    }
+}
+
+@media screen and (max-width:725px){
+    .icon-div{
+        position: absolute;
+        left:600px;
+        top:110px
+    }
+}
+
+@media screen and (max-width:690px){
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+    
+    .icon-div{
+        position: absolute;
+        left:320px;
+        top:150px
+    }
+
+    .techno-info{
+        background-color: rgb(11, 12, 43);
+        max-width: 100%;
+        height:800px;
+    }
+    
+    
+    .h2-4{
+        font-family: "Orbitron", sans-serif;
+        color:white;
+        margin-bottom: 10px;
+        padding-left: 100px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+    
+    .main-techno-info{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+    .href1,.href2,.href3,.contact-us{
+        padding-left: 100px;
+    }
+
+    .logos{
+        padding-left: 100px;
+        padding-top: 0px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap:100px;
+        background-color: #ebebeb;
+        width:500px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .headphonemaininfo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap:0px;
+        margin-bottom: 50px;
+    }
+    
+    .h1-1{
+        font-size: 50px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .img4{
+        width:250px;
+        height:335px;
+    }
+    
+    .image{
+        padding-top: 0px;
+        margin-left: 200px;
+    }
+    
+    .heading{
+        padding-left: 30px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .maininfo{
+        font-family: "Roboto", sans-serif;
+        color:rgb(159, 159, 159);
+        font-size: 12px;
+    }
+    
+    .info{
+        font-family: "Kanit", sans-serif;
+        padding-top: 5px;
+    }
+    
+    .headphonesinfo{
+        background-color: #F8F8F8;
+        height:900px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headphones-main-div{
+        margin-bottom: 50px;
+    }
+    
+    .info1{
+        display: flex;
+        flex-direction: column;
+        gap:50px
+    }
+    
+    .div1info1{
+        margin-bottom: 50px;
+    }
+    
+    .div2info1{
+        margin-bottom: 50px;
+    }
+    
+    .heading2{
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .paragraph1{
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        color:rgb(133, 133, 133)
+    }
+    
+    .buttoninfo{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    
+    .button4{
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:rgb(254, 254, 254);
+        width:100px;
+        padding: 0px;
+        height:40px;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    
+    .button4:hover{
+        background-color: transparent;
+        border:1px solid rgb(234, 97, 97);
+        color:black;
+        transition: 0.25s;
+    }
+    
+    .headphones1{
+        width:220px;
+    }
+    
+    .headphones1image{
+        padding-left: 0px;
+        padding-top: 130px;
+    }
+    
+    .info-headphone1{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    
+    .maintextinfo{
+        padding-top: 150px;
+    }
+    
+    .h1-4{
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    .colors-div{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+    
+    .pricecontent{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        border-right: 1px solid black;
+        padding-right: 10px;
+    }
+    
+    .colorparagraph{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+    }
+    
+    .differentcolors1{
+        background-color: grey;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors2{
+        background-color: red;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors3{
+        background-color: black;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors4{
+        background-color: blue;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors5{
+        background-color: blueviolet;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors1parentdiv{
+        padding-top: 5px;
+    }
+    
+    .text{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    .headphones5{
+        width:150px
+    }
+    
+    .headphones5image{
+        padding-left: 30px;
+        padding-top: 150px;
+    }
+    
+    .headphones6image{
+        padding-left: 30px;
+        padding-top: 150px;
+    }
+    
+    .info-headphone5{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .info-headphone6{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    
+    .search-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2-5{
+        font-family: "Quicksand", sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    input{
+        border:none;
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .buttonsearch{
+        position: absolute;
+        left:320px;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:white
+    }
+    
+    input::placeholder{
+        padding-left: 10px;
+        color:rgb(83, 83, 83)
+    }
+}
+
+@media screen and (max-width:670px){
+    .icon-div{
+        position: absolute;
+        left:350px;
+        top:150px
+    }
+}
+
+@media screen and (max-width:668px){
+    .icon-div{
+        position: absolute;
+        left:300px;
+        top:150px
+    }
+}
+
+
+@media screen and (max-width:499px){
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+    
+    .icon-div{
+        position: absolute;
+        left:190px;
+        top:150px
+    }
+
+    .a1{
+        font-size: 13px;
+    }
+
+    .techno-info{
+        background-color: rgb(11, 12, 43);
+        max-width: 100%;
+        height:800px;
+    }
+    
+    
+    .h2-4{
+        font-family: "Orbitron", sans-serif;
+        color:white;
+        margin-bottom: 10px;
+        padding-left: 50px;
+    }
+
+    .paragraph2{
+        font-size: 13px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+    
+    .main-techno-info{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+    .href1,.href2,.href3,.contact-us{
+        padding-left: 50px;
+    }
+
+    .logos{
+        padding-left: 50px;
+        padding-top: 0px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap:100px;
+        background-color: #ebebeb;
+        width:400px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .headphonemaininfo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap:0px;
+        margin-bottom: 50px;
+    }
+    
+    .h1-1{
+        font-size: 40px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .img4{
+        width:200px;
+        height:270px;
+    }
+    
+    .image{
+        padding-top: 0px;
+        margin-left: 190px;
+    }
+    
+    .heading{
+        padding-left: 20px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .maininfo{
+        font-family: "Roboto", sans-serif;
+        color:black;
+        font-size: 10px;
+    }
+    
+    .info{
+        font-family: "Kanit", sans-serif;
+        padding-top: 5px;
+    }
+    
+    .headphonesinfo{
+        background-color: #F8F8F8;
+        height:900px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headphones-main-div{
+        margin-bottom: 50px;
+    }
+    
+    .info1{
+        display: flex;
+        flex-direction: column;
+        gap:50px
+    }
+    
+    .div1info1{
+        margin-bottom: 50px;
+    }
+    
+    .div2info1{
+        margin-bottom: 50px;
+    }
+    
+    .heading2{
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .paragraph1{
+        font-family: "Kanit", sans-serif;
+        font-size: 15px;
+        color:rgb(133, 133, 133)
+    }
+    
+    .buttoninfo{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    
+    .button4{
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:rgb(254, 254, 254);
+        width:100px;
+        padding: 0px;
+        height:40px;
+        border-radius: 20px;
+        margin-top: 5px;
+    }
+    
+    .button4:hover{
+        background-color: transparent;
+        border:1px solid rgb(234, 97, 97);
+        color:black;
+        transition: 0.25s;
+    }
+    
+    .headphones1{
+        width:180px;
+    }
+    
+    .headphones1image{
+        padding-left: 0px;
+        padding-top: 130px;
+    }
+    
+    .info-headphone1{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    
+    .maintextinfo{
+        padding-top: 150px;
+    }
+    
+    .h1-4{
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .colors-div{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+    
+    .pricecontent{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        border-right: 1px solid black;
+        padding-right: 10px;
+    }
+    
+    .colorparagraph{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+    }
+    
+    .differentcolors1{
+        background-color: grey;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors2{
+        background-color: red;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors3{
+        background-color: black;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors4{
+        background-color: blue;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors5{
+        background-color: blueviolet;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors1parentdiv{
+        padding-top: 5px;
+    }
+    
+    .text{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 9px;
+    }
+    
+    .headphones5{
+        width:120px
+    }
+    
+    .headphones5image{
+        padding-left: 30px;
+        padding-top: 150px;
+    }
+    
+    .headphones6image{
+        padding-left: 30px;
+        padding-top: 150px;
+    }
+    
+    .info-headphone5{
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+    }
+    
+    .info-headphone6{
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+    }
+    
+    .search-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2-5{
+        font-family: "Quicksand", sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    input{
+        border:none;
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .buttonsearch{
+        position: absolute;
+        left:320px;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:white
+    }
+    
+    input::placeholder{
+        padding-left: 10px;
+        color:rgb(83, 83, 83)
+    }
+}
+
+
+@media screen and (max-width:430px){
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+
+    .a1{
+        font-size: 12px;
+    }
+    
+    .icon-div{
+        position: absolute;
+        left:180px;
+        top:150px
+    }
+
+    .techno-info{
+        background-color: rgb(11, 12, 43);
+        max-width: 100%;
+        height:800px;
+    }
+    
+    
+    .h2-4{
+        font-family: "Orbitron", sans-serif;
+        color:white;
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+    
+    .main-techno-info{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+    .href1,.href2,.href3,.contact-us{
+        padding-left: 30px;
+    }
+
+    .logos{
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap:100px;
+        background-color: #ebebeb;
+        width:400px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .headphonemaininfo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap:0px;
+        margin-bottom: 50px;
+    }
+    
+    .h1-1{
+        font-size: 40px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .img4{
+        width:200px;
+        height:270px;
+    }
+    
+    .image{
+        padding-top: 0px;
+        margin-left: 150px;
+    }
+    
+    .heading{
+        padding-left: 10px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .maininfo{
+        font-family: "Roboto", sans-serif;
+        color:black;
+        font-size: 9px;
+    }
+    
+    .info{
+        font-family: "Kanit", sans-serif;
+        padding-top: 5px;
+    }
+    
+    .headphonesinfo{
+        background-color: #F8F8F8;
+        height:900px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headphones-main-div{
+        margin-bottom: 50px;
+    }
+    
+    .info1{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+        padding-left: 20px;
+    }
+    
+    .div1info1{
+        margin-bottom: 50px;
+    }
+    
+    .div2info1{
+        margin-bottom: 50px;
+    }
+    
+    .heading2{
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+    }
+    
+    .paragraph1{
+        font-family: "Kanit", sans-serif;
+        font-size: 13px;
+        color:rgb(133, 133, 133)
+    }
+    
+    .buttoninfo{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+    
+    
+    .button4{
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:rgb(254, 254, 254);
+        width:100px;
+        padding: 0px;
+        height:40px;
+        border-radius: 20px;
+        margin-top: 5px;
+    }
+    
+    .button4:hover{
+        background-color: transparent;
+        border:1px solid rgb(234, 97, 97);
+        color:black;
+        transition: 0.25s;
+    }
+    
+    .headphones1{
+        width:130px;
+    }
+    
+    .headphones1image{
+        padding-left: 0px;
+        padding-top: 130px;
+    }
+    
+    .info-headphone1{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    
+    .maintextinfo{
+        padding-top: 150px;
+    }
+    
+    .h1-4{
+        font-family: "Quicksand", sans-serif;
+        margin-bottom: 20px;
+    }
+    
+    .colors-div{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        margin-bottom: 20px;
+    }
+    
+    .pricecontent{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        border-right: 1px solid black;
+        padding-right: 10px;
+    }
+    
+    .colorparagraph{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+    }
+    
+    .differentcolors1{
+        background-color: grey;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors2{
+        background-color: red;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors3{
+        background-color: black;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors4{
+        background-color: blue;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors5{
+        background-color: blueviolet;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+    }
+    
+    .differentcolors1parentdiv{
+        padding-top: 5px;
+    }
+    
+    .text{
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 9px;
+    }
+    
+    .headphones5{
+        width:100px
+    }
+    
+    .headphones5image{
+        padding-left: 20px;
+        padding-top: 150px;
+    }
+    
+    .headphones6image{
+        padding-left: 20px;
+        padding-top: 150px;
+    }
+    
+    .info-headphone5{
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+    }
+    
+    .info-headphone6{
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+    }
+    
+    .search-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h2-5{
+        font-family: "Quicksand", sans-serif;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    input{
+        border:none;
+        background-color: rgb(206, 206, 206);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .input-div{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .buttonsearch{
+        position: absolute;
+        left:320px;
+        padding: 10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border:none;
+        background-color: rgb(234, 97, 97);
+        color:white
+    }
+    
+    input::placeholder{
+        padding-left: 10px;
+        color:rgb(83, 83, 83)
+    }
+}
+
+@media screen and (max-width:411px){
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .hrefs-div{
+        padding-right: 0px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 60px;
+    }
+    
+    .icon-div{
+        position: absolute;
+        left:150px;
+        top:150px
+    }
+
+    .a1{
+        font-size: 10px;
+        padding-right: 15px;
+    }
+}

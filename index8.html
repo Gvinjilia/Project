@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNO</title>
+    <link rel="stylesheet" href="style8.css">
+    <link rel="icon" href="Images/Screenshot_2025-03-12_200344-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <div class="image-div">
+                <img src="images/TECHNO.png" class="img1">
+            </div>
+            <div class="hrefs-div">
+                <a href="index.html" class="a1">Home</a>
+                <a href="index6.html" class="a1">About</a>
+                <a href="#" class="a1">Contact Us</a>
+                <a href="index1.html" class="a1">Phone</a>
+                <a href="index2.html" class="a1">Computer</a>
+                <a href="index3.html" class="a1">Headphones</a>
+            </div>
+            <div class="icon-div">
+                <img src="images/shopping-cart.png" class="img2">
+                <img src="images/people.png" class="img3">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="chat">
+            <div class="info">
+                <h1>Chat</h1>
+                <div class="chatting" id="chatwith"></div>
+                <p class="typing" id="chattyping">Typing</p>
+                <div class="userinput">
+                    <div class="account-div">
+                        <img src="Images/profile.jpg" class="account">
+                    </div>
+                        <input type="text" id="input" placeholder="Send a Message">
+                        <button id="button5">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="techno-info">
+            <div class="info3">
+                <h2 class="h2-3">TECHNO</h2>
+                <p class="paragraph">Welcome to Techno – Redefining Innovation Explore<br>cutting-edge technology crafted to elevate your everyday life.</p>
+            </div>
+            <div class="main-techno-info">
+                <div class="logo-div">
+                    <h2 class="h2-4">TECHNO</h2>
+                </div>
+                <div class="href1">
+                    <a href="index.html" class="a3">Home</a>
+                    <a href="index6.html" class="a3">About</a>
+                </div>
+                <div class="href2">
+                    <a href="#" class="a3">Contact Us</a>
+                    <a href="index1.html" class="a3">Phone</a>
+                </div>
+                <div class="href3">
+                    <a href="index2.html" class="a3">Computer</a>
+                    <a href="index3.html" class="a3">Headphones</a>
+                </div>
+                <div class="contact-us">
+                    <p class="paragraph3">Contact Us: +1 234 (789) 678</p>
+                </div>
+                <div class="logos">
+                    <img src="images/instagram (2).png" class="logo">
+                    <img src="images/facebook (1).png" class="logo">
+                    <img src="images/twitter.png" class="logo">
+                    <img src="images/whatsapp.png" class="logo">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const chatDisplay = document.getElementById('chatwith');
+        const userInput = document.getElementById('input');
+        const sendButton = document.getElementById('button5');
+        const typingIndicator = document.getElementById('chattyping');
+        const addMessageToChat = (message, isUser) => {
+            const messageContainer = document.createElement('div');
+            messageContainer.classList.add(isUser ? 'user' : 'Techno');
+            const profileImage = document.createElement('img');
+            profileImage.src = isUser
+                ? 'Images/profile.jpg'
+                : 'images/Screenshot_2025-03-12_200344-removebg-preview.png';
+            profileImage.alt = isUser ? 'User Avatar' : 'Techno';
+            profileImage.classList.add(isUser ? 'user-image' : 'Techno-image');
+            messageContainer.appendChild(profileImage);
+            const messageElement = document.createElement('div');
+            messageElement.classList.add(isUser ? 'user-text' : 'Techno-text');
+            messageElement.textContent = message;
+            messageContainer.appendChild(messageElement);
+
+            chatDisplay.appendChild(messageContainer);
+            chatDisplay.scrollTop = chatDisplay.scrollHeight;
+        };
+
+        const handleUserMessage = () => {
+            const userMessage = userInput.value.trim();
+            if (!userMessage) {
+                return;
+            }
+            addMessageToChat(userMessage, true);
+
+            userInput.value = '';
+            chatDisplay.scrollTop = chatDisplay.scrollHeight;
+
+            typingIndicator.style.display = 'inline';
+            setTimeout(() => {
+                const assistantResponse = generateAssistantResponse(userMessage);
+                addMessageToChat(assistantResponse, false);
+                typingIndicator.style.display = 'none';
+            }, 2000);
+        };
+
+
+
+        const generateAssistantResponse = (message) => {
+            const lowerMessage = message.toLowerCase().trim();
+            if (lowerMessage.includes('website') && lowerMessage.includes('number')) {
+                return 'Contact Us: +1 234 (789) 678';
+            } else if (lowerMessage.includes('i want to buy something')) {
+                return 'Sure! What do you want to buy?';
+            } else if (lowerMessage.includes('i want to buy headphones')) {
+                return 'Sure, just go to the headphones section and choose headphones!';
+            } else if (lowerMessage.includes('i want to buy computers')) {
+                return 'Sure, just go to the laptop section and choose computers!';
+            } else if (lowerMessage.includes('i want to buy a phone')) {
+                return 'Sure, just go to the phones section and choose a phone!';
+            } else if (lowerMessage.includes('thanks') || lowerMessage.includes('thank you')) {
+                return 'No problem, always here to help!';
+            } else if (lowerMessage.startsWith('i like')) {
+                return `Thank you very much! I'm here to help if you need something.`;
+            } else if (lowerMessage.includes('bye')) {
+                return 'Have a Good Day!';
+            }else if (lowerMessage.includes('hello') || lowerMessage.includes('hey') || lowerMessage.includes('hi')) {
+                return 'Hi there! How can I assist you today?';
+            } else {
+                return 'Great! How can I assist?';
+            }
+        };
+
+
+        sendButton.addEventListener('click', handleUserMessage);
+
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                handleUserMessage();
+            }
+        });
+    </script>
+</body>
+</html>

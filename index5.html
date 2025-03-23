@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNO</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="icon" href="Images/Screenshot_2025-03-12_200344-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <div class="image-div">
+                <img src="images/TECHNO.png" class="img1">
+            </div>
+            <div class="hrefs-div">
+                <a href="index.html" class="a1">Home</a>
+                <a href="index6.html" class="a1">About</a>
+                <a href="index8.html" class="a1">Contact Us</a>
+                <a href="index1.html" class="a1">Phone</a>
+                <a href="index2.html" class="a1">Computer</a>
+                <a href="index3.html" class="a1">Headphones</a>
+            </div>
+            <div class="icon-div">
+                <img src="images/shopping-cart.png" class="img2">
+                <img src="images/people.png" class="img3">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="accepted-div">
+            <div class="image-div2">
+                <img src="Images/check.png" class="checked">
+            </div>
+            <div class="info">
+                <h2>Payment Approved</h2>
+                <p class="paragraph1">We have recieved your Payment!</p>
+            </div>
+            <p class="status">Status</p>
+            <div class="status-div">
+                <img src="Images/check.png" class="checked2">
+                <p class="paragraph2">Successful</p>
+            </div>
+            <div class="carddetails">
+                <div class="paymentmethod">
+                    <p class="payment">Payment Method</p>
+                </div>
+                <div class="position">
+                    <div class="cardinfo">
+                        <img src="Images/MClogo-c823e495c5cf455c89ddfb0e17fc7978-removebg-preview.png" class="mastercard">
+                        <p class="mastercardparagraph">Mastercard</p>
+                    </div>
+                </div>
+            </div>
+            <div class="position">
+                <div class="download-div">
+                    <p class="downloadparagraph">Downoload</p>
+                    <img src="Images/download.png" class="downloadimage">
+                </div>
+            </div>
+            <div class="back-on-the-main-page">
+                <a href="index.html" class="home">Home</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+        }
+        const isOnline = getQueryParam("online");
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString();
+
+        if (isOnline === "true") {
+            document.body.innerHTML =`
+                                        <header>
+                                            <div class="header-div">
+                                                <div class="image-div">
+                                                    <img src="images/TECHNO.png" class="img1">
+                                                </div>
+                                                <div class="hrefs-div">
+                                                    <a href="index.html" class="a1">Home</a>
+                                                    <a href="#" class="a1">About</a>
+                                                    <a href="#" class="a1">Contact Us</a>
+                                                    <a href="index1.html" class="a1">Phone</a>
+                                                    <a href="index2.html" class="a1">Computer</a>
+                                                    <a href="index3.html" class="a1">Headphones</a>
+                                                </div>
+                                                <div class="icon-div">
+                                                    <img src="images/shopping-cart.png" class="img2">
+                                                    <img src="images/people.png" class="img3">
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <main>
+                                            <div class="accepted-div">
+                                                <div class="image-div2">
+                                                    <img src="Images/check.png" class="checked">
+                                                </div>
+                                                <div class="info">
+                                                    <h2>Payment Approved</h2>
+                                                    <p class="paragraph1">We have received your Payment!</p>
+                                                </div>
+                                                <p class="status">Status</p>
+                                                <div class="status-div">
+                                                    <img src="Images/check.png" class="checked2">
+                                                    <p class="paragraph2">Successful</p>
+                                                </div>
+                                                <p class="date"><span>Date:</span> ${new Date().toLocaleDateString()}</p>
+                                                <div class="carddetails">
+                                                    <div class="paymentmethod">
+                                                        <p class="payment">Payment Method</p>
+                                                    </div>
+                                                    <div class="position">
+                                                        <div class="cardinfo">
+                                                            <img src="Images/MClogo-c823e495c5cf455c89ddfb0e17fc7978-removebg-preview.png" class="mastercard">
+                                                            <p class="mastercardparagraph">Mastercard</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position">
+                                                    <div class="download-div">
+                                                        <p class="downloadparagraph">Downoload</p>
+                                                        <img src="Images/download.png" class="downloadimage">
+                                                    </div>
+                                                </div>
+                                                <div class="back-on-the-main-page">
+                                                    <a href="index.html" class="home">Home</a>
+                                                </div>
+                                            </div>
+                                        </main>
+                                    `;
+        } else {
+            document.body.innerHTML = `
+                                        <header>
+                                            <div class="header-div">
+                                                <div class="image-div">
+                                                    <img src="images/TECHNO.png" class="img1">
+                                                </div>
+                                                <div class="hrefs-div">
+                                                    <a href="index.html" class="a1">Home</a>
+                                                    <a href="#" class="a1">About</a>
+                                                    <a href="#" class="a1">Contact Us</a>
+                                                    <a href="index1.html" class="a1">Phone</a>
+                                                    <a href="index2.html" class="a1">Computer</a>
+                                                    <a href="index3.html" class="a1">Headphones</a>
+                                                </div>
+                                                <div class="icon-div">
+                                                    <img src="images/shopping-cart.png" class="img2">
+                                                    <img src="images/people.png" class="img3">
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <main>
+                                            <div class="declined-div">
+                                                <div class="image-div3">
+                                                    <img src="Images/decline.png" class="declined">
+                                                </div>
+                                                <div class="info">
+                                                    <h2>Payment Declined</h2>
+                                                    <p class="paragraph1">Check Your Internet Connection!</p>
+                                                </div>
+                                                <p class="status">Status</p>
+                                                <div class="status-div">
+                                                    <img src="Images/decline.png" class="checked2">
+                                                    <p class="paragraph2">Declined</p>
+                                                </div>
+                                                <p class="date"><span>Date:</span> ${new Date().toLocaleDateString()}</p>
+                                                <div class="carddetails">
+                                                    <div class="paymentmethod">
+                                                        <p class="payment">Payment Method</p>
+                                                    </div>
+                                                    <div class="position">
+                                                        <div class="cardinfo">
+                                                            <img src="Images/MClogo-c823e495c5cf455c89ddfb0e17fc7978-removebg-preview.png" class="mastercard">
+                                                            <p class="mastercardparagraph">Mastercard</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position">
+                                                    <div class="download-div">
+                                                        <p class="downloadparagraph">Downoload</p>
+                                                        <img src="Images/download.png" class="downloadimage">
+                                                    </div>
+                                                </div>
+                                                 <div class="back-on-the-main-page">
+                                                    <a href="index.html" class="home">Home</a>
+                                                </div>
+                                            </div>
+                                        </main>`
+        }
+    </script>
+</body>
+</html>
